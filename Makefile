@@ -15,7 +15,7 @@ endif
 SRC_BIN = $(wildcard *.c)
 OBJS = $(OBJ_BIN)
 OBJ_BIN = $(SRC_BIN:%.c=$O/%.o)
-TARGET_BIN = $O/ft5x06-tool
+TARGET_BIN = $O/muca-flash
 BINS = $(TARGET_BIN)
 
 DESTDIR ?= /usr
