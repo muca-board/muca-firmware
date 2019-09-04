@@ -28,7 +28,7 @@ Build instructions
 Very straight-forward:
 ```
 git clone https://github.com/muca-board/muca-firmware.git
-cd ft5x06-tool/
+cd muca-firmware/
 make
 ```
 
