@@ -27,9 +27,9 @@ Build instructions
 
 Very straight-forward:
 ```
-git clone https://github.com/muca-board/muca-firmware.git
-cd muca-firmware/
-make
+$ git clone https://github.com/muca-board/muca-firmware.git
+$ cd muca-firmware/
+$ make
 ```
 
 
@@ -39,7 +39,7 @@ Usage
 To upload the firmware to the Muca Board (FT5316DME)
 
 ```
-# ft5x06-tool -b 1 - c 0x0A -i MuCaFirmware.bin 
+$ ./muca-flash -b 1 -c 0x0A -i MuCaFirmware.bin 
 ```
 
 On a raspberry pi, the i2c bus is set to `1`. The chip id has to be forced because the firmware is empty. 
