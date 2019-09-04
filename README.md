@@ -13,6 +13,15 @@ As for runtime dependency, the kernel must have `i2c-dev` support enabled.
 
 You need to have a physical access to the i2c ports, like raspberry pi. 
 
+To enable `i2c-dev`:
+```
+sudo raspi-config
+5 > Interfacing options
+P5 I2C
+<Enable>
+```
+
+
 Build instructions
 ------------------
 
