@@ -18,10 +18,9 @@ Build instructions
 
 Very straight-forward:
 ```
-$ cd
-$ git clone https://github.com/boundarydevices/ft5x06-tool
-$ cd ft5x06-tool/
-$ make
+git clone https://github.com/muca-board/muca-firmware.git
+cd ft5x06-tool/
+make
 ```
 
 
