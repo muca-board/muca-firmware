@@ -13,14 +13,22 @@ As for runtime dependency, the kernel must have `i2c-dev` support enabled.
 
 You need to have a physical access to the i2c ports, like raspberry pi. 
 
+To enable `i2c-dev`:
+```
+sudo raspi-config
+5 > Interfacing options
+P5 I2C
+<Enable>
+```
+
+
 Build instructions
 ------------------
 
 Very straight-forward:
 ```
-$ cd
-$ git clone https://github.com/boundarydevices/ft5x06-tool
-$ cd ft5x06-tool/
+$ git clone https://github.com/muca-board/muca-firmware.git
+$ cd muca-firmware/
 $ make
 ```
 
@@ -31,7 +39,7 @@ Usage
 To upload the firmware to the Muca Board (FT5316DME)
 
 ```
-# ft5x06-tool -b 1 - c 0x0A -i MuCaFirmware.bin 
+$ ./muca-flash -b 1 -c 0x0A -i MuCaFirmware.bin 
 ```
 
 On a raspberry pi, the i2c bus is set to `1`. The chip id has to be forced because the firmware is empty. 
