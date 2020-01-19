@@ -1,6 +1,13 @@
 MuCa - Firmware
 ===========
 
+
+Before starting
+------------
+#### If you ordered the board online, the flashing is not required!
+
+
+
 This code is a form from [ft5x06-tool](https://github.com/boundarydevices/ft5x06-tool), largely inspired from the [Focaltech GitHub driver](https://github.com/focaltech-systems/drivers-input-touchscreen-FTS_driver).
 
 
