@@ -40,6 +40,16 @@ $ make
 ```
 
 
+Usage With Flashing Rig
+-----
+
+I setup a flashing rig to flash the Muca board. You don't need this rig if you don't need to flash 650 boards. 
+
+
+```
+$ sudo python3 muca-flash-autorun.py
+```
+
 Usage
 -----
 
@@ -67,6 +77,8 @@ OPTIONS:
 		Input firmware file to flash.
 	-o, --output
 		Output firmware file read from FT5x06.
+	-d, --debug
+		Enable or disable I2C debug. Default 0, 1 to enable
 	-h, --help
 		Show this help and exit.
 ```
