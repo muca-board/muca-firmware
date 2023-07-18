@@ -516,7 +516,7 @@ static void show_help(const char *name)
 	     "Default is read from controller.\n"
 	     "\t-i, --input\n\t\tInput firmware file to flash.\n"
 	     "\t-o, --output\n\t\tOutput firmware file read from FT5x06.\n"
-	     "\t-d, --debug\n\t\tEnable/Disable verbose debut.\n"
+	     "\t-d, --debug\n\t\tEnable/Disable verbose debug.\n"
 	     "\t-h, --help\n\t\tShow this help and exit.\n", name);
 	return;
 }
@@ -550,7 +550,8 @@ int main(int argc, const char *argv[])
 			output = argv[++arg_count];
 		} else if ((strcmp(argv[arg_count], "-d") == 0)
 			   || (strcmp(argv[arg_count], "--debug") == 0)) {
-			debug = strtol(argv[++arg_count], NULL, 10);
+			debug = 1;
+            ++arg_count;
 		} else {
 			show_help(argv[0]);
 			exit(1);
